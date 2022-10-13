@@ -1,0 +1,138 @@
+.new {
+    height: 100vh;
+
+}
+.sponsors {
+    margin: 5rem 8rem 6rem 8rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sponsor-preview {
+    display: flex;
+}
+.sponsor-preview>img {
+    width: 11rem;
+ 
+}
+.sponsor-preview>img:hover {
+    filter: brightness(0) saturate(100) invert(100%);
+}
+
+.news {
+    margin: 3rem 6rem 4rem 6rem;
+  
+    background: linear-gradient(
+        -168.39deg,
+        #ffffff -278.56%,
+        #6d6d6d -78.47%,
+        #11101d 91.61%
+      );
+    backdrop-filter: blur(5px);
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+}
+.news-l {
+    display: flex;
+    flex-direction: column;
+   
+flex: 2;
+}
+.news-l>h2 {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.news-l>p {
+    color: rgba(255, 255, 255, 0.7);
+width: 69%;
+line-height: 2;
+}
+.news-r {
+    flex: 1;
+   
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:1100px) {
+ 
+.new {
+    height: auto;
+    padding-bottom: 5rem;
+}
+.news {
+    margin: 3rem 2rem 0rem 2rem;
+}
+.sponsor-preview>img {
+    width: 9rem;
+}
+.sponsors {
+    margin: 5rem 3rem 6rem 3rem;
+  
+    
+}
+}
+
+@media screen and (max-width:991px) {
+   .news {
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 2rem;
+   }
+   .news-l>h2 {
+    color: white;
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.news-l>p {
+    color: rgba(255, 255, 255, 0.7);
+width: 100%;
+line-height: 2;
+margin-bottom: 2rem;
+}
+
+}
+@media screen and (min-width:1200px) {
+.new {
+    height: auto;
+}
+}
+
+
+@media screen and (max-width:768px) {
+   .sponsors {
+    flex-direction: column;
+   
+   }
+   .sponsor-preview {
+    display: flex;
+margin-bottom: 1.5rem;
+}
+.news-l>h2 {
+ font-size: xx-large;
+}
+.news {
+    padding: 3rem 1rem;
+
+}
+.sponsors {
+    margin: 0rem 3rem 2rem 3rem;   
+}
+}
+
+@media screen and (max-width:600px) {
+  
+
+    .sponsor-preview>img {
+        width: 8rem;
+    }
+}

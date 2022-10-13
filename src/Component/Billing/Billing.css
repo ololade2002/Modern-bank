@@ -1,0 +1,91 @@
+
+.billing {
+    height: 100vh;
+    display: flex;
+   margin: 0rem 3rem 0rem 6rem;
+ justify-content: center;
+ align-items: center;
+}
+.billing-left {
+    flex: 1;
+ position: relative;
+}
+.billing-left>div {
+    height: 50%;
+    width: 10rem;
+    left: -10rem;
+    background: rgba(255, 255, 255, 0.6);
+position: absolute;
+transform: rotate(176.62deg);
+filter: blur(140px);
+}
+.billing-left>img {
+    width: 97%;
+    position: relative;
+}
+.billing-right {
+    flex: 1;
+}
+.billing-right>h2 {
+    color: white;
+    text-align: start;
+    font-size: 2.7rem;
+    font-weight: 600;
+  margin: 0 auto;
+    width: 90%;
+    margin-bottom: 1.8rem;
+    
+}
+.billing-right>p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+width: 80%;
+margin: 0 auto 2.7rem auto;
+}
+.b-img {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+}
+@media screen and (min-width:1200px) {
+.billing {
+    height: auto;
+}
+}
+@media screen and (max-width:1100px) {
+    .billing {
+        height: auto;
+        margin: 0rem 2rem;
+        padding: 3rem 0rem 5rem 0rem;
+    }
+    .billing-right>h2 {
+        width: 100%;
+        text-align: start;
+       
+    }
+    .billing-right>p {
+        width: 100%;
+    }
+    .b-img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .billing {
+    row-gap: 2rem;
+        flex-direction: column;
+        padding: 4rem 0rem 0rem 0rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .billing-right>h2 {
+        font-size: xx-large;
+    }   
+    .b-img {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,149 @@
+
+.hero {
+  align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0rem 0rem 0rem 6rem;
+   
+}
+.left-hero {
+ padding-top: 2rem;
+    flex: 3;
+    position: relative;
+    z-index: 1;
+}
+
+.left-hero .discount {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(150deg, #272727 0%, #11101D 100%);
+
+    width: fit-content;
+    border-radius: 7px;
+    padding: 2px 10px;
+    gap: .8rem;
+    margin-bottom: 1rem;
+    
+}
+.discount h4 {
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    opacity: 1;
+}
+.discount>h4>span {
+    opacity: .7;
+}
+
+.hero-text {
+    color: white;
+ display: flex;
+align-items: flex-start;
+position: relative;
+margin-bottom: 2.1rem;
+}
+.hero-text>h1 {
+    font-size: 3.95rem;
+    font-weight: 600;
+}
+.hero-text>img {
+   object-fit: contain;
+   position: absolute;
+   right: 3rem;
+   width: 7rem;
+  
+}
+.hero-text>h1>span {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  
+}
+.left-hero>p {
+    color: rgba(255, 255, 255, 0.7);
+    width: 75%;
+    font-weight: 300;
+    line-height: 2;
+}
+.right-hero {
+    flex: 1;
+    position: relative;
+   
+}
+
+.blue {
+    position: absolute;
+    z-index: 0;
+    width: 50%;
+    height: 50%;
+    right: 20px;
+    bottom: 20px;
+    filter: blur(120px);
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+}
+
+
+.right-hero>img {
+    position: relative;
+    width: 560px;
+    animation: robot 3s linear infinite ;
+z-index: 3;
+}
+
+  
+@media screen and (max-width:1100px) {
+    .hero {
+        padding: 0rem 0rem 0rem 2rem;
+        display: flex;
+      
+        justify-content: center;
+    }
+   
+    .hero-text>h1 {
+        font-size: xxx-large;
+        width: 70%;
+    }
+    .left-hero>p {
+        width: 100%;
+    }
+    .left-hero .discount {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .hero {
+        flex-direction: column;
+        padding: 0rem 0rem 0rem 2rem;
+    }
+    
+    .hero-text>h1 {
+        width: 70%;
+      
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .hero {
+        padding: 0rem 2rem 0rem 2rem;
+
+    }
+    .hero-text>img {
+        width: 6rem;
+      top: 3rem;
+      right: 0rem;
+    }
+    .hero-text>h1 {
+        font-size: xx-large;
+        margin-top: 2rem;
+    }
+    .left-hero .discount {
+        width: fit-content;
+    
+    }
+    .discount h4  {
+        font-size: medium;
+    }
+}

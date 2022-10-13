@@ -1,0 +1,121 @@
+
+.business {
+    color: white;
+    margin: 7rem 4rem 5rem 6rem;
+    height: 100vh;
+  
+}
+
+.business-body {
+    display: flex;
+}
+.left-business {
+   
+    flex: 1;
+}
+.left-business>h2 {
+    font-size: 2.7rem;
+  
+    margin-bottom: 2.2rem;
+    font-weight: 600;
+}
+.left-business>p {
+    color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  line-height: 1.9;
+    margin-bottom: 2.2rem;
+    font-size: 1rem;
+}
+.btn {
+    border: none;
+    background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+    padding: 14px 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.right-business {
+   flex: 1;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+.business-preview {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.4rem;
+    margin-bottom: .7rem;
+width: 90%;
+padding: 1rem 1rem;
+transition: .9s ease-in-out;
+}
+.active {
+    background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+  
+    box-shadow:inset 0px 20px 100px -10px  rgba(66, 71, 91, 0.1);
+    border-radius: 18px;
+    filter: drop-shadow(rgba(66, 71, 91, 0.1));
+
+    
+}
+.business-preview>div:nth-of-type(1) {
+    width: 1rem;
+    height: 1rem;
+    background: rgba(9, 151, 124, 0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+  padding: 1.7rem 1.7rem;
+}
+.business-preview>div>img {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: relative;   
+}
+.business-preview h2 {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: .6rem;
+}
+.business-preview p {
+    color: rgba(255, 255, 255, 0.7);
+   
+    font-size: 15px;
+    font-weight: 300;
+}
+@media screen and (min-width:1200px) {
+.business {
+    height: auto;
+}
+}
+
+@media screen and (max-width:1100px) {
+    .business {
+        margin: 7rem 2rem 5rem 2rem;
+        height: auto;
+    }
+   
+}
+@media screen and (max-width:991px) {
+    .business {
+        margin: 7rem 2rem 5rem 2rem;
+    }
+   
+}
+@media screen and (max-width:991px) {
+    .business-body {
+        flex-direction: column;
+        row-gap: 4rem;
+    } 
+    .business-preview {
+        width: 100%;
+        padding: 0.9rem;
+    }
+}
+@media screen and (max-width:600px) {
+    .left-business>h2 {
+        font-size: xx-large;
+    }   
+}
